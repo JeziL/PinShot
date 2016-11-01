@@ -23,7 +23,7 @@
     self.initialPasteboardChangeCount = [[NSPasteboard generalPasteboard] changeCount];
     NSTask *captureTask = [[NSTask alloc] init];
     captureTask.launchPath = kScreenCaptureLaunchPath;
-    captureTask.arguments = @[@"-ic"];
+    captureTask.arguments = @[@"-sci"];
     [captureTask launch];
     [captureTask autorelease];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkCaptureTaskStatus:) name:NSTaskDidTerminateNotification object:captureTask];
