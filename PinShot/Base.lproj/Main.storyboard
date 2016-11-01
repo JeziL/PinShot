@@ -655,7 +655,26 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="statusMenu" destination="26k-LA-Mgm" id="p0Z-2e-fKE"/>
+                    </connections>
+                </customObject>
+                <menu id="26k-LA-Mgm" userLabel="Status Menu">
+                    <items>
+                        <menuItem title="New Capture" keyEquivalent="n" id="OWR-7g-XWv">
+                            <connections>
+                                <action selector="newCapture:" target="Voe-Tx-rLC" id="tRG-xz-ORK"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="25n-LE-Riv"/>
+                        <menuItem title="Preference..." keyEquivalent="," id="dcj-gR-ZZe"/>
+                        <menuItem title="About" id="Za0-YK-C6b">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="Quit" keyEquivalent="q" id="xNu-N2-RyP"/>
+                    </items>
+                </menu>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="703" y="193"/>

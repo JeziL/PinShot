@@ -11,6 +11,7 @@
 @interface AppDelegate ()
 
 @property (nonatomic, retain) PSScreenCapturer *capturer;
+@property (strong) NSStatusItem *statusItem;
 
 @end
 
@@ -27,6 +28,16 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [NSApp setActivationPolicy:NSApplicationActivationPolicyAccessory];
+    [self initStatusMenu];
+}
+
+- (void)initStatusMenu {
+    self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    self.statusItem.title = @"PinShot";
+    self.statusItem.menu = self.statusMenu;
+}
+
+- (IBAction)newCapture:(NSMenuItem *)sender {
     [self.capturer startCapture];
 }
 

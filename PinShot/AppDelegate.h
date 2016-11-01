@@ -15,7 +15,9 @@
 
 @property (strong) PSScreenshotWindowController *windowController;
 @property (strong) PSScreenshotViewController *viewController;
+@property (strong) IBOutlet NSMenu *statusMenu;
 
+- (IBAction)newCapture:(NSMenuItem *)sender;
 
 @end
 
