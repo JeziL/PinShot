@@ -15,6 +15,7 @@
 		0A0947DD1DC84972009D9675 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0947DC1DC84972009D9675 /* AppKit.framework */; };
 		0A0947E51DC865F1009D9675 /* PSScreenshotWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */; };
 		0A0947E81DC86717009D9675 /* PSScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */; };
+		0AB8628B1DC8D39C00E2DAB1 /* PSPreferenceWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB8628A1DC8D39C00E2DAB1 /* PSPreferenceWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenshotWindowController.m; sourceTree = "<group>"; };
 		0A0947E61DC86717009D9675 /* PSScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSScreenshotViewController.h; sourceTree = "<group>"; };
 		0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenshotViewController.m; sourceTree = "<group>"; };
+		0AB862891DC8D39C00E2DAB1 /* PSPreferenceWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPreferenceWindowController.h; sourceTree = "<group>"; };
+		0AB8628A1DC8D39C00E2DAB1 /* PSPreferenceWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPreferenceWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 				0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */,
 				0A0947E61DC86717009D9675 /* PSScreenshotViewController.h */,
 				0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */,
+				0AB862891DC8D39C00E2DAB1 /* PSPreferenceWindowController.h */,
+				0AB8628A1DC8D39C00E2DAB1 /* PSPreferenceWindowController.m */,
 				0A0947CD1DC8441E009D9675 /* Assets.xcassets */,
 				0A0947CF1DC8441E009D9675 /* Main.storyboard */,
 				0A0947D21DC8441E009D9675 /* Info.plist */,
@@ -170,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0947C91DC8441E009D9675 /* main.m in Sources */,
+				0AB8628B1DC8D39C00E2DAB1 /* PSPreferenceWindowController.m in Sources */,
 				0A0947E81DC86717009D9675 /* PSScreenshotViewController.m in Sources */,
 				0A0947DA1DC845C8009D9675 /* PSScreenCapturer.m in Sources */,
 				0A0947E51DC865F1009D9675 /* PSScreenshotWindowController.m in Sources */,

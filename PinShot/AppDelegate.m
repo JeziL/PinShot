@@ -41,6 +41,12 @@
     [self.capturer startCapture];
 }
 
+- (IBAction)showPreference:(NSMenuItem *)sender {
+    NSStoryboard *storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.prefWindowController = [storyboard instantiateControllerWithIdentifier:@"PreferenceWindow"];
+    [self.prefWindowController showWindow:self];
+}
+
 - (PSScreenCapturer *)capturer {
     if (!_capturer) {
         _capturer = [[PSScreenCapturer alloc] init];
