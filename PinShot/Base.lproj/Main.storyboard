@@ -715,6 +715,9 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jpq-2p-pFD" customClass="PSScreenshotImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Tr1-rV-DtK"/>
+                                <connections>
+                                    <outlet property="menu" destination="GfU-af-Hlm" id="0bf-gz-OPa"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <constraints>
@@ -729,6 +732,16 @@
                     </connections>
                 </viewController>
                 <customObject id="oT9-6m-bMy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <menu id="GfU-af-Hlm" userLabel="Right Click Menu">
+                    <items>
+                        <menuItem title="Save As..." id="aWM-kM-LXr">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="Share" id="UdJ-v6-Ug4">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                    </items>
+                </menu>
             </objects>
             <point key="canvasLocation" x="1240" y="456"/>
         </scene>
