@@ -671,8 +671,15 @@
                         <menuItem title="Preference..." keyEquivalent="," id="dcj-gR-ZZe"/>
                         <menuItem title="About" id="Za0-YK-C6b">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="1hd-Vv-gud"/>
+                            </connections>
                         </menuItem>
-                        <menuItem title="Quit" keyEquivalent="q" id="xNu-N2-RyP"/>
+                        <menuItem title="Quit" keyEquivalent="q" id="xNu-N2-RyP">
+                            <connections>
+                                <action selector="terminate:" target="Ady-hI-5gd" id="H6B-ih-u86"/>
+                            </connections>
+                        </menuItem>
                     </items>
                 </menu>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
