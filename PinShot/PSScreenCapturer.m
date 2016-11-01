@@ -3,7 +3,7 @@
 //  PinShot
 //
 //  Created by Wang Jinli on 2016/11/1.
-//  Copyright © 2016年 Wang Jinli. All rights reserved.
+//  Copyright © 2016 Wang Jinli. All rights reserved.
 //
 
 #import "PSScreenCapturer.h"
@@ -25,6 +25,7 @@
     captureTask.launchPath = kScreenCaptureLaunchPath;
     captureTask.arguments = @[@"-ic"];
     [captureTask launch];
+    [captureTask autorelease];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkCaptureTaskStatus:) name:NSTaskDidTerminateNotification object:captureTask];
 }
 
@@ -49,7 +50,7 @@
 
 - (void)captureFinished {
     NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
-    NSString * desiredType = [pasteboard availableTypeFromArray:@[NSPasteboardTypePNG]];
+    NSString *desiredType = [pasteboard availableTypeFromArray:@[NSPasteboardTypePNG]];
     if ([desiredType isEqualToString:NSPasteboardTypePNG]) {
         NSData *imageData = [pasteboard dataForType:desiredType];
         if (!imageData) {
@@ -57,7 +58,7 @@
             return;
         }
         if ([_delegate respondsToSelector:@selector(screenCapturer:didFinishCapturingWithImage:)]) {
-            NSImage *image = [[NSImage alloc] initWithData:imageData];
+            NSImage *image = [[[NSImage alloc] initWithData:imageData] autorelease];
             [_delegate screenCapturer:self didFinishCapturingWithImage:image];
         }
     }
