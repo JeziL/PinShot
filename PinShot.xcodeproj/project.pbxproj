@@ -13,6 +13,8 @@
 		0A0947D11DC8441E009D9675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0947CF1DC8441E009D9675 /* Main.storyboard */; };
 		0A0947DA1DC845C8009D9675 /* PSScreenCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0947D91DC845C8009D9675 /* PSScreenCapturer.m */; };
 		0A0947DD1DC84972009D9675 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0947DC1DC84972009D9675 /* AppKit.framework */; };
+		0A0947E51DC865F1009D9675 /* PSScreenshotWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */; };
+		0A0947E81DC86717009D9675 /* PSScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		0A0947D81DC845C8009D9675 /* PSScreenCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSScreenCapturer.h; sourceTree = "<group>"; };
 		0A0947D91DC845C8009D9675 /* PSScreenCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenCapturer.m; sourceTree = "<group>"; };
 		0A0947DC1DC84972009D9675 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0A0947E31DC865F1009D9675 /* PSScreenshotWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSScreenshotWindowController.h; sourceTree = "<group>"; };
+		0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenshotWindowController.m; sourceTree = "<group>"; };
+		0A0947E61DC86717009D9675 /* PSScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSScreenshotViewController.h; sourceTree = "<group>"; };
+		0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenshotViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,10 @@
 				0A0947C51DC8441E009D9675 /* AppDelegate.m */,
 				0A0947D81DC845C8009D9675 /* PSScreenCapturer.h */,
 				0A0947D91DC845C8009D9675 /* PSScreenCapturer.m */,
+				0A0947E31DC865F1009D9675 /* PSScreenshotWindowController.h */,
+				0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */,
+				0A0947E61DC86717009D9675 /* PSScreenshotViewController.h */,
+				0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */,
 				0A0947CD1DC8441E009D9675 /* Assets.xcassets */,
 				0A0947CF1DC8441E009D9675 /* Main.storyboard */,
 				0A0947D21DC8441E009D9675 /* Info.plist */,
@@ -160,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0947C91DC8441E009D9675 /* main.m in Sources */,
+				0A0947E81DC86717009D9675 /* PSScreenshotViewController.m in Sources */,
 				0A0947DA1DC845C8009D9675 /* PSScreenCapturer.m in Sources */,
+				0A0947E51DC865F1009D9675 /* PSScreenshotWindowController.m in Sources */,
 				0A0947C61DC8441E009D9675 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

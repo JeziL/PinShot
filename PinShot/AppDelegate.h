@@ -7,8 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "PSScreenCapturer.h"
+#import "PSScreenshotWindowController.h"
+#import "PSScreenshotViewController.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, PSScreenCapturerDelegate>
+
+@property (strong) PSScreenshotWindowController *windowController;
+@property (strong) PSScreenshotViewController *viewController;
 
 
 @end

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -657,7 +658,53 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="703" y="193"/>
+        </scene>
+        <!--ScreenShotWindow-->
+        <scene sceneID="N5s-4U-1PM">
+            <objects>
+                <windowController storyboardIdentifier="ScreenShotWindow" id="BWT-zb-aAD" userLabel="ScreenShotWindow" customClass="PSScreenshotWindowController" sceneMemberID="viewController">
+                    <window key="window" title="PinShot" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="uHg-iK-NIc">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                    </window>
+                    <connections>
+                        <segue destination="xCd-f7-Iya" kind="relationship" relationship="window.shadowedContentViewController" id="1g3-eQ-6gr"/>
+                    </connections>
+                </windowController>
+                <customObject id="XA8-Cf-D2O" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="463"/>
+        </scene>
+        <!--Screenshot View Controller-->
+        <scene sceneID="8HE-lm-rM7">
+            <objects>
+                <viewController id="xCd-f7-Iya" customClass="PSScreenshotViewController" sceneMemberID="viewController">
+                    <view key="view" id="465-Py-a8k">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jpq-2p-pFD">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Tr1-rV-DtK"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jpq-2p-pFD" secondAttribute="trailing" id="QEh-Qh-gbz"/>
+                            <constraint firstItem="Jpq-2p-pFD" firstAttribute="leading" secondItem="465-Py-a8k" secondAttribute="leading" id="lTD-54-Ndw"/>
+                            <constraint firstAttribute="bottom" secondItem="Jpq-2p-pFD" secondAttribute="bottom" id="mLL-55-eGD"/>
+                            <constraint firstItem="Jpq-2p-pFD" firstAttribute="top" secondItem="465-Py-a8k" secondAttribute="top" id="woM-lC-IpZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="screenshotView" destination="Jpq-2p-pFD" id="wsg-gp-Djd"/>
+                    </connections>
+                </viewController>
+                <customObject id="oT9-6m-bMy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240" y="456"/>
         </scene>
     </scenes>
 </document>
