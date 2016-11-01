@@ -21,6 +21,8 @@
     [[self.window standardWindowButton:NSWindowMiniaturizeButton] setHidden:YES];
     [[self.window standardWindowButton:NSWindowZoomButton] setHidden:YES];
     self.window.movableByWindowBackground = YES;
+    [self.window setLevel:kCGMaximumWindowLevel];
+    [self.window setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivedImage:) name:@"ShowScreenshot" object:nil];
 }
 
