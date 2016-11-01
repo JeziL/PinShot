@@ -8,8 +8,7 @@
 
 #import <MASShortcut/Shortcut.h>
 #import "AppDelegate.h"
-
-static NSString * const kPSNewCaptureShortcut = @"NewCaptureShortcut";
+#import "PSUserDefaults.h"
 
 @interface AppDelegate ()
 
@@ -32,18 +31,18 @@ static NSString * const kPSNewCaptureShortcut = @"NewCaptureShortcut";
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [NSApp setActivationPolicy:NSApplicationActivationPolicyAccessory];
     [self initStatusMenu];
-    if (![[NSUserDefaults standardUserDefaults] objectForKey:kPSNewCaptureShortcut]) {
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:kPSNewCaptureShortcutKey]) {
         [self registerDefaultShortcut];
     }
-    [[MASShortcutBinder sharedBinder] bindShortcutWithDefaultsKey:kPSNewCaptureShortcut toAction:^{
+    [[MASShortcutBinder sharedBinder] bindShortcutWithDefaultsKey:kPSNewCaptureShortcutKey toAction:^{
         [self.capturer startCapture];
     }];
 }
 
 - (void)registerDefaultShortcut {
-    MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:kVK_ANSI_4 modifierFlags:NSEventModifierFlagShift|NSEventModifierFlagOption|NSEventModifierFlagCommand];
+    MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:kPSDefaultNewCaptureShortcutKeyCode modifierFlags:kPSDefaultNewCaptureShortcutModifierFlags];
     NSData *shortcutData = [NSKeyedArchiver archivedDataWithRootObject:shortcut];
-    [[NSUserDefaults standardUserDefaults] setObject:shortcutData forKey:kPSNewCaptureShortcut];
+    [[NSUserDefaults standardUserDefaults] setObject:shortcutData forKey:kPSNewCaptureShortcutKey];
 }
 
 - (void)initStatusMenu {

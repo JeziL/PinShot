@@ -54,6 +54,7 @@
 		0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MASShortcut.framework; sourceTree = "<group>"; };
 		0AB862901DC8D5F800E2DAB1 /* PSPreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPreferenceViewController.h; sourceTree = "<group>"; };
 		0AB862911DC8D5F800E2DAB1 /* PSPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPreferenceViewController.m; sourceTree = "<group>"; };
+		0AB862931DC8DE4600E2DAB1 /* PSUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSUserDefaults.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				0A0947CF1DC8441E009D9675 /* Main.storyboard */,
 				0A0947D21DC8441E009D9675 /* Info.plist */,
 				0A0947C71DC8441E009D9675 /* Supporting Files */,
+				0AB862931DC8DE4600E2DAB1 /* PSUserDefaults.h */,
 			);
 			path = PinShot;
 			sourceTree = "<group>";
