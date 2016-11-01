@@ -729,11 +729,20 @@
         <!--Preference View Controller-->
         <scene sceneID="DAV-ST-EXo">
             <objects>
-                <viewController id="NYa-TL-0ik" userLabel="Preference View Controller" sceneMemberID="viewController">
+                <viewController id="NYa-TL-0ik" userLabel="Preference View Controller" customClass="PSPreferenceViewController" sceneMemberID="viewController">
                     <view key="view" id="IZw-gZ-Fui">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IUc-ru-FpK" customClass="MASShortcutView">
+                                <rect key="frame" x="184" y="129" width="163" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </customView>
+                        </subviews>
                     </view>
+                    <connections>
+                        <outlet property="shortcutView" destination="IUc-ru-FpK" id="45Q-fv-dUx"/>
+                    </connections>
                 </viewController>
                 <customObject id="57j-GF-z0Q" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -3,7 +3,7 @@
 //  PinShot
 //
 //  Created by Wang Jinli on 2016/11/1.
-//  Copyright © 2016年 Wang Jinli. All rights reserved.
+//  Copyright © 2016 Wang Jinli. All rights reserved.
 //
 
 #import "PSPreferenceWindowController.h"

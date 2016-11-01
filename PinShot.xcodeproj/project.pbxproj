@@ -16,7 +16,23 @@
 		0A0947E51DC865F1009D9675 /* PSScreenshotWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */; };
 		0A0947E81DC86717009D9675 /* PSScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */; };
 		0AB8628B1DC8D39C00E2DAB1 /* PSPreferenceWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB8628A1DC8D39C00E2DAB1 /* PSPreferenceWindowController.m */; };
+		0AB8628E1DC8D4BB00E2DAB1 /* MASShortcut.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AB8628F1DC8D53700E2DAB1 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */; };
+		0AB862921DC8D5F800E2DAB1 /* PSPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB862911DC8D5F800E2DAB1 /* PSPreferenceViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AB8628C1DC8D45E00E2DAB1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AB8628E1DC8D4BB00E2DAB1 /* MASShortcut.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A0947C11DC8441E009D9675 /* PinShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +51,9 @@
 		0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenshotViewController.m; sourceTree = "<group>"; };
 		0AB862891DC8D39C00E2DAB1 /* PSPreferenceWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPreferenceWindowController.h; sourceTree = "<group>"; };
 		0AB8628A1DC8D39C00E2DAB1 /* PSPreferenceWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPreferenceWindowController.m; sourceTree = "<group>"; };
+		0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MASShortcut.framework; sourceTree = "<group>"; };
+		0AB862901DC8D5F800E2DAB1 /* PSPreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPreferenceViewController.h; sourceTree = "<group>"; };
+		0AB862911DC8D5F800E2DAB1 /* PSPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPreferenceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB8628F1DC8D53700E2DAB1 /* MASShortcut.framework in Frameworks */,
 				0A0947DD1DC84972009D9675 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +72,7 @@
 		0A0947B81DC8441E009D9675 = {
 			isa = PBXGroup;
 			children = (
+				0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */,
 				0A0947C31DC8441E009D9675 /* PinShot */,
 				0A0947C21DC8441E009D9675 /* Products */,
 				0A0947DB1DC84972009D9675 /* Frameworks */,
@@ -79,6 +100,8 @@
 				0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */,
 				0AB862891DC8D39C00E2DAB1 /* PSPreferenceWindowController.h */,
 				0AB8628A1DC8D39C00E2DAB1 /* PSPreferenceWindowController.m */,
+				0AB862901DC8D5F800E2DAB1 /* PSPreferenceViewController.h */,
+				0AB862911DC8D5F800E2DAB1 /* PSPreferenceViewController.m */,
 				0A0947CD1DC8441E009D9675 /* Assets.xcassets */,
 				0A0947CF1DC8441E009D9675 /* Main.storyboard */,
 				0A0947D21DC8441E009D9675 /* Info.plist */,
@@ -113,6 +136,7 @@
 				0A0947BD1DC8441E009D9675 /* Sources */,
 				0A0947BE1DC8441E009D9675 /* Frameworks */,
 				0A0947BF1DC8441E009D9675 /* Resources */,
+				0AB8628C1DC8D45E00E2DAB1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -176,6 +200,7 @@
 			files = (
 				0A0947C91DC8441E009D9675 /* main.m in Sources */,
 				0AB8628B1DC8D39C00E2DAB1 /* PSPreferenceWindowController.m in Sources */,
+				0AB862921DC8D5F800E2DAB1 /* PSPreferenceViewController.m in Sources */,
 				0A0947E81DC86717009D9675 /* PSScreenshotViewController.m in Sources */,
 				0A0947DA1DC845C8009D9675 /* PSScreenCapturer.m in Sources */,
 				0A0947E51DC865F1009D9675 /* PSScreenshotWindowController.m in Sources */,
@@ -291,6 +316,10 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7X9UFZRCPT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PinShot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangjinli.PinShot;
@@ -305,6 +334,10 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7X9UFZRCPT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PinShot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangjinli.PinShot;
