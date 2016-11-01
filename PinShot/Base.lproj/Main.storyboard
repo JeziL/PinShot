@@ -711,7 +711,7 @@
         <!--PreferenceWindow-->
         <scene sceneID="mPm-RK-Bnk">
             <objects>
-                <windowController storyboardIdentifier="PreferenceWindow" id="T74-nA-268" userLabel="PreferenceWindow" customClass="PSPreferenceWindowController" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="PreferenceWindow" id="T74-nA-268" userLabel="PreferenceWindow" sceneMemberID="viewController">
                     <window key="window" title="Preference" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="ugT-KN-Jfg">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>

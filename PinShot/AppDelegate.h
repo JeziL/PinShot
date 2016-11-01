@@ -10,13 +10,12 @@
 #import "PSScreenCapturer.h"
 #import "PSScreenshotWindowController.h"
 #import "PSScreenshotViewController.h"
-#import "PSPreferenceWindowController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate, PSScreenCapturerDelegate>
 
 @property (strong) PSScreenshotWindowController *windowController;
 @property (strong) PSScreenshotViewController *viewController;
-@property (strong) PSPreferenceWindowController *prefWindowController;
+@property (strong) NSWindowController *prefWindowController;
 @property (strong) IBOutlet NSMenu *statusMenu;
 
 - (IBAction)newCapture:(NSMenuItem *)sender;
