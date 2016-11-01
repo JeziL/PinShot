@@ -8,6 +8,8 @@
 
 #import "PSPreferenceViewController.h"
 
+static NSString * const kPSNewCaptureShortcut = @"NewCaptureShortcut";
+
 @interface PSPreferenceViewController ()
 
 @end
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    self.shortcutView.associatedUserDefaultsKey = kPSNewCaptureShortcut;
+    
 }
 
 @end

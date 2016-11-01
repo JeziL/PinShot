@@ -6,7 +6,10 @@
 //  Copyright © 2016 Wang Jinli. All rights reserved.
 //
 
+#import <MASShortcut/Shortcut.h>
 #import "AppDelegate.h"
+
+static NSString * const kPSNewCaptureShortcut = @"NewCaptureShortcut";
 
 @interface AppDelegate ()
 
@@ -29,6 +32,18 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [NSApp setActivationPolicy:NSApplicationActivationPolicyAccessory];
     [self initStatusMenu];
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:kPSNewCaptureShortcut]) {
+        [self registerDefaultShortcut];
+    }
+    [[MASShortcutBinder sharedBinder] bindShortcutWithDefaultsKey:kPSNewCaptureShortcut toAction:^{
+        [self.capturer startCapture];
+    }];
+}
+
+- (void)registerDefaultShortcut {
+    MASShortcut *shortcut = [MASShortcut shortcutWithKeyCode:kVK_ANSI_4 modifierFlags:NSEventModifierFlagShift|NSEventModifierFlagOption|NSEventModifierFlagCommand];
+    NSData *shortcutData = [NSKeyedArchiver archivedDataWithRootObject:shortcut];
+    [[NSUserDefaults standardUserDefaults] setObject:shortcutData forKey:kPSNewCaptureShortcut];
 }
 
 - (void)initStatusMenu {
