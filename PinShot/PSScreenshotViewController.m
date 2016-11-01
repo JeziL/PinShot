@@ -8,6 +8,17 @@
 
 #import "PSScreenshotViewController.h"
 
+@interface PSScreenshotImageView()
+@end
+
+@implementation PSScreenshotImageView
+
+- (BOOL)mouseDownCanMoveWindow {
+    return YES;
+}
+
+@end
+
 @interface PSScreenshotViewController ()
 
 @end

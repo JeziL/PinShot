@@ -8,8 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
+@interface PSScreenshotImageView: NSImageView
+
+- (BOOL)mouseDownCanMoveWindow;
+
+@end
+
 @interface PSScreenshotViewController : NSViewController
 
-@property (assign) IBOutlet NSImageView *screenshotView;
+@property (assign) IBOutlet PSScreenshotImageView *screenshotView;
 
 @end
