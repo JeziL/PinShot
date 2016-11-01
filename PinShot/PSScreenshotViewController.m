@@ -35,4 +35,18 @@
     self.screenshotView.image = image;
 }
 
+- (IBAction)save:(NSMenuItem *)sender {
+    NSSavePanel *savePanel = [NSSavePanel savePanel];
+    [savePanel setNameFieldStringValue:@"NewScreenshot.png"];
+    [savePanel beginSheetModalForWindow:[self.view window] completionHandler:^(NSInteger result){
+        if (result == NSFileHandlingPanelOKButton) {
+            NSURL *fileUrl = [savePanel URL];
+            NSData *data = self.screenshotView.image.TIFFRepresentation;
+            NSBitmapImageRep *imgRep = [[NSBitmapImageRep alloc] initWithData:data];
+            NSData *imgData = [imgRep representationUsingType:NSPNGFileType properties:@{}];
+            [imgData writeToURL:fileUrl atomically:NO];
+        }
+    }];
+}
+
 @end

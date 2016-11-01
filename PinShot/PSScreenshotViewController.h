@@ -18,4 +18,6 @@
 
 @property (assign) IBOutlet PSScreenshotImageView *screenshotView;
 
+- (IBAction)save:(NSMenuItem *)sender;
+
 @end

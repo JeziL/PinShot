@@ -736,9 +736,9 @@
                     <items>
                         <menuItem title="Save As..." id="aWM-kM-LXr">
                             <modifierMask key="keyEquivalentModifierMask"/>
-                        </menuItem>
-                        <menuItem title="Share" id="UdJ-v6-Ug4">
-                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="save:" target="xCd-f7-Iya" id="A3d-rJ-ujc"/>
+                            </connections>
                         </menuItem>
                     </items>
                 </menu>
