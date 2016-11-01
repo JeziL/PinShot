@@ -27,7 +27,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivedImage:) name:@"ShowScreenshot" object:nil];
+}
+
+- (void)receivedImage: (NSNotification *)notification {
+    NSImage *image = notification.object;
+    self.screenshotView.image = image;
 }
 
 @end

@@ -48,11 +48,7 @@
     NSStoryboard *storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     self.windowController = [storyboard instantiateControllerWithIdentifier:@"ScreenShotWindow"];
     [self.windowController showWindow:self];
-    CGRect rect = NSMakeRect(0, 0, image.size.width, image.size.height);
-    [self.windowController.window setFrame:rect display:YES];
-    self.viewController = (PSScreenshotViewController *)self.windowController.window.contentViewController;
-    self.viewController.view.frame = rect;
-    self.viewController.screenshotView.image = image;
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowScreenshot" object:image];
 }
 
 @end
