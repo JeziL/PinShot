@@ -59,6 +59,7 @@
 - (IBAction)showPreference:(NSMenuItem *)sender {
     NSStoryboard *storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     self.prefWindowController = [storyboard instantiateControllerWithIdentifier:@"PreferenceWindow"];
+    [NSApp activateIgnoringOtherApps:YES];
     [self.prefWindowController showWindow:self];
 }
 
