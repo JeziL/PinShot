@@ -15,6 +15,8 @@
 		0A0947DD1DC84972009D9675 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0947DC1DC84972009D9675 /* AppKit.framework */; };
 		0A0947E51DC865F1009D9675 /* PSScreenshotWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */; };
 		0A0947E81DC86717009D9675 /* PSScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */; };
+		0A70D78A1DCAD00F0097BD5E /* PSOverlayWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A70D7891DCAD00F0097BD5E /* PSOverlayWindowController.m */; };
+		0A70D78D1DCAD02D0097BD5E /* PSOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A70D78C1DCAD02D0097BD5E /* PSOverlayView.m */; };
 		0AB8628E1DC8D4BB00E2DAB1 /* MASShortcut.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AB8628F1DC8D53700E2DAB1 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */; };
 		0AB862921DC8D5F800E2DAB1 /* PSPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB862911DC8D5F800E2DAB1 /* PSPreferenceViewController.m */; };
@@ -48,6 +50,10 @@
 		0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenshotWindowController.m; sourceTree = "<group>"; };
 		0A0947E61DC86717009D9675 /* PSScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSScreenshotViewController.h; sourceTree = "<group>"; };
 		0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenshotViewController.m; sourceTree = "<group>"; };
+		0A70D7881DCAD00F0097BD5E /* PSOverlayWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSOverlayWindowController.h; sourceTree = "<group>"; };
+		0A70D7891DCAD00F0097BD5E /* PSOverlayWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSOverlayWindowController.m; sourceTree = "<group>"; };
+		0A70D78B1DCAD02D0097BD5E /* PSOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSOverlayView.h; sourceTree = "<group>"; };
+		0A70D78C1DCAD02D0097BD5E /* PSOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSOverlayView.m; sourceTree = "<group>"; };
 		0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MASShortcut.framework; sourceTree = "<group>"; };
 		0AB862901DC8D5F800E2DAB1 /* PSPreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPreferenceViewController.h; sourceTree = "<group>"; };
 		0AB862911DC8D5F800E2DAB1 /* PSPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPreferenceViewController.m; sourceTree = "<group>"; };
@@ -98,6 +104,10 @@
 				0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */,
 				0AB862901DC8D5F800E2DAB1 /* PSPreferenceViewController.h */,
 				0AB862911DC8D5F800E2DAB1 /* PSPreferenceViewController.m */,
+				0A70D7881DCAD00F0097BD5E /* PSOverlayWindowController.h */,
+				0A70D7891DCAD00F0097BD5E /* PSOverlayWindowController.m */,
+				0A70D78B1DCAD02D0097BD5E /* PSOverlayView.h */,
+				0A70D78C1DCAD02D0097BD5E /* PSOverlayView.m */,
 				0A0947CD1DC8441E009D9675 /* Assets.xcassets */,
 				0A0947CF1DC8441E009D9675 /* Main.storyboard */,
 				0A0947D21DC8441E009D9675 /* Info.plist */,
@@ -197,6 +207,8 @@
 			files = (
 				0A0947C91DC8441E009D9675 /* main.m in Sources */,
 				0AB862921DC8D5F800E2DAB1 /* PSPreferenceViewController.m in Sources */,
+				0A70D78D1DCAD02D0097BD5E /* PSOverlayView.m in Sources */,
+				0A70D78A1DCAD00F0097BD5E /* PSOverlayWindowController.m in Sources */,
 				0A0947E81DC86717009D9675 /* PSScreenshotViewController.m in Sources */,
 				0A0947DA1DC845C8009D9675 /* PSScreenCapturer.m in Sources */,
 				0A0947E51DC865F1009D9675 /* PSScreenshotWindowController.m in Sources */,
