@@ -63,6 +63,11 @@
     [self.prefWindowController showWindow:self];
 }
 
+- (IBAction)showAbout:(NSMenuItem *)sender {
+    [NSApp activateIgnoringOtherApps:YES];
+    [NSApp orderFrontStandardAboutPanel:sender];
+}
+
 - (PSScreenCapturer *)capturer {
     if (!_capturer) {
         _capturer = [[PSScreenCapturer alloc] init];

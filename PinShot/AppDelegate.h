@@ -20,6 +20,7 @@
 
 - (IBAction)newCapture:(NSMenuItem *)sender;
 - (IBAction)showPreference:(NSMenuItem *)sender;
+- (IBAction)showAbout:(NSMenuItem *)sender;
 
 @end
 

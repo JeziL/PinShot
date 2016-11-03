@@ -676,7 +676,7 @@
                         <menuItem title="About" id="Za0-YK-C6b">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
-                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="1hd-Vv-gud"/>
+                                <action selector="showAbout:" target="Voe-Tx-rLC" id="yQp-qe-O4R"/>
                             </connections>
                         </menuItem>
                         <menuItem title="Quit" keyEquivalent="q" id="xNu-N2-RyP">
