@@ -15,6 +15,7 @@
 		0A0947DD1DC84972009D9675 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0947DC1DC84972009D9675 /* AppKit.framework */; };
 		0A0947E51DC865F1009D9675 /* PSScreenshotWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */; };
 		0A0947E81DC86717009D9675 /* PSScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */; };
+		0A6E00281DCB3532004960DB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E00271DCB3532004960DB /* Credits.rtf */; };
 		0A70D78A1DCAD00F0097BD5E /* PSOverlayWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A70D7891DCAD00F0097BD5E /* PSOverlayWindowController.m */; };
 		0A70D78D1DCAD02D0097BD5E /* PSOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A70D78C1DCAD02D0097BD5E /* PSOverlayView.m */; };
 		0AB8628E1DC8D4BB00E2DAB1 /* MASShortcut.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -50,6 +51,7 @@
 		0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenshotWindowController.m; sourceTree = "<group>"; };
 		0A0947E61DC86717009D9675 /* PSScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSScreenshotViewController.h; sourceTree = "<group>"; };
 		0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenshotViewController.m; sourceTree = "<group>"; };
+		0A6E00271DCB3532004960DB /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		0A70D7881DCAD00F0097BD5E /* PSOverlayWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSOverlayWindowController.h; sourceTree = "<group>"; };
 		0A70D7891DCAD00F0097BD5E /* PSOverlayWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSOverlayWindowController.m; sourceTree = "<group>"; };
 		0A70D78B1DCAD02D0097BD5E /* PSOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSOverlayView.h; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0947C81DC8441E009D9675 /* main.m */,
+				0A6E00271DCB3532004960DB /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0947CE1DC8441E009D9675 /* Assets.xcassets in Resources */,
+				0A6E00281DCB3532004960DB /* Credits.rtf in Resources */,
 				0A0947D11DC8441E009D9675 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
