@@ -18,6 +18,12 @@
     return YES;
 }
 
+- (void)resetCursorRects {
+    [super resetCursorRects];
+    [self addCursorRect:self.bounds cursor:[NSCursor crosshairCursor]];
+    [self.window invalidateCursorRectsForView:self];
+}
+
 - (void)cursorUpdate:(NSEvent *)event {
     [[NSCursor crosshairCursor] set];
 }

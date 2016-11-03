@@ -46,6 +46,8 @@
     frame.size.height = frame.size.height;
     [self.window setFrame:frame display:YES];
     [self.window setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
+    [NSApp activateIgnoringOtherApps:YES];
+    [self.window becomeKeyWindow];
 }
 
 - (void)activeSpaceDidChange: (NSNotification *)notification {

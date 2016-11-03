@@ -28,6 +28,7 @@
     PSOverlayView *overlayView = (PSOverlayView *)self.overlayWindowController.window.contentViewController.view;
     overlayView.delegate = self;
     [self.overlayWindowController showWindow:self];
+    [NSApp activateIgnoringOtherApps:YES];
 }
 
 - (void)checkCaptureTaskStatus: (NSNotification *)notification {
