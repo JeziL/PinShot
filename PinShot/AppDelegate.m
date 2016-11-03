@@ -47,8 +47,8 @@
 
 - (void)initStatusMenu {
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    //self.statusItem.title = @"PinShot";
     self.statusItem.image = [NSImage imageNamed:@"StatusItemImage"];
+    self.statusItem.alternateImage = [NSImage imageNamed:@"StatusItemImageHighlighted"];
     self.statusItem.menu = self.statusMenu;
 }
 
