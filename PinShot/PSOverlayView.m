@@ -18,6 +18,10 @@
     return YES;
 }
 
+- (void)cursorUpdate:(NSEvent *)event {
+    [[NSCursor crosshairCursor] set];
+}
+
 #pragma mark - Keyboard Events
 
 - (void)keyDown:(NSEvent *)event {
