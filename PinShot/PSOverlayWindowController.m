@@ -19,7 +19,8 @@
         [self setOpaque:NO];
         [self setHasShadow:NO];
         [self setBackgroundColor:[NSColor clearColor]];
-        [self setAlphaValue:0.3];
+        [self setIgnoresMouseEvents:NO];
+        [self setAlphaValue:0.2];
     }
     return self;
 }
@@ -41,12 +42,10 @@
     [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(activeSpaceDidChange:) name:NSWorkspaceActiveSpaceDidChangeNotification object:nil];
     //self.window.movableByWindowBackground = YES;
     [self.window setLevel:kCGMaximumWindowLevel];
-    /********/
     NSRect frame = [[NSScreen mainScreen] frame];
-    frame.size.height = frame.size.height - 200;
+    frame.size.height = frame.size.height;
     [self.window setFrame:frame display:YES];
     [self.window setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 
 - (void)activeSpaceDidChange: (NSNotification *)notification {

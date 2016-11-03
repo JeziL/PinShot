@@ -37,6 +37,7 @@
     self.shapeLayer = [CAShapeLayer layer];
     self.shapeLayer.strokeColor = [[NSColor whiteColor] CGColor];
     self.shapeLayer.fillColor = [[NSColor grayColor] CGColor];
+    [self setWantsLayer:YES];
     [self.layer addSublayer:self.shapeLayer];
 }
 

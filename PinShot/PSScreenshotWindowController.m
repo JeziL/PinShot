@@ -28,9 +28,9 @@
 
 - (void)receivedImage: (NSNotification *)notification {
     NSImage *image = notification.object;
-    NSPoint mouseLocation = [NSEvent mouseLocation];
-    NSPoint origin = NSMakePoint(mouseLocation.x - image.size.width, mouseLocation.y);
-    [self.window setFrame:[self makeRectAtOrigin:origin withSize:image.size] display:YES];
+    NSDictionary *rectInfo = notification.userInfo;
+    NSRect rect = NSMakeRect([[rectInfo objectForKey:@"x"] floatValue], [[rectInfo objectForKey:@"y"] floatValue], [[rectInfo objectForKey:@"w"] floatValue], [[rectInfo objectForKey:@"h"] floatValue]);
+    [self.window setFrame:rect display:YES];
     self.window.contentViewController.view.frame = [self makeRectAtOrigin:NSMakePoint(0, 0) withSize:image.size];
 }
 

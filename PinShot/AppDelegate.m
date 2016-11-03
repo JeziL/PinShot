@@ -76,11 +76,15 @@
 
 #pragma mark - PSScreenCapturerDelegate Methods
 
-- (void)screenCapturer:(PSScreenCapturer *)capturer didFinishCapturingWithImage:(NSImage *)image {
+- (void)screenCapturer:(PSScreenCapturer *)capturer didFinishCapturingWithImage:(NSImage *)image atRect:(NSRect)rect {
     NSStoryboard *storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     self.windowController = [storyboard instantiateControllerWithIdentifier:@"ScreenShotWindow"];
     [self.windowController showWindow:self];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowScreenshot" object:image];
+    NSDictionary *rectInfo = @{@"x": [NSNumber numberWithDouble:rect.origin.x],
+                               @"y": [NSNumber numberWithDouble:rect.origin.y],
+                               @"w": [NSNumber numberWithDouble:rect.size.width],
+                               @"h": [NSNumber numberWithDouble:rect.size.height]};
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowScreenshot" object:image userInfo:rectInfo];
 }
 
 @end

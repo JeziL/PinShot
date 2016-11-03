@@ -7,13 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PSOverlayWindowController.h"
+#import "PSOverlayView.h"
 
 @protocol PSScreenCapturerDelegate;
 
-
-@interface PSScreenCapturer : NSObject
+@interface PSScreenCapturer : NSObject<PSOverlayViewDelegate>
 
 @property (assign) id<PSScreenCapturerDelegate> delegate;
+
+@property (strong) PSOverlayWindowController *overlayWindowController;
 
 - (void)startCapture;
 
@@ -22,6 +25,6 @@
 
 @protocol PSScreenCapturerDelegate <NSObject>
 
-- (void)screenCapturer: (PSScreenCapturer *)capturer didFinishCapturingWithImage: (NSImage *)image;
+- (void)screenCapturer: (PSScreenCapturer *)capturer didFinishCapturingWithImage: (NSImage *)image atRect: (NSRect)rect;
 
 @end
