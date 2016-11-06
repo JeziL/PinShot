@@ -17,6 +17,18 @@
     return YES;
 }
 
+- (void)scrollWheel:(NSEvent *)event {
+    if ([event deltaY]) {
+        CGFloat deltaY = [event deltaY];
+        if (deltaY > 0 && self.window.alphaValue <= 1) {
+            self.window.alphaValue = self.window.alphaValue + 0.05;
+        }
+        else if (deltaY < 0 && self.window.alphaValue > 0.1) {
+            self.window.alphaValue = self.window.alphaValue - 0.05;
+        }
+    }
+}
+
 @end
 
 @interface PSScreenshotViewController ()
