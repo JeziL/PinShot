@@ -51,6 +51,7 @@
 		0A0947E41DC865F1009D9675 /* PSScreenshotWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenshotWindowController.m; sourceTree = "<group>"; };
 		0A0947E61DC86717009D9675 /* PSScreenshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSScreenshotViewController.h; sourceTree = "<group>"; };
 		0A0947E71DC86717009D9675 /* PSScreenshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenshotViewController.m; sourceTree = "<group>"; };
+		0A179A3A1DEFB22A006DC41A /* PinShot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PinShot.entitlements; sourceTree = "<group>"; };
 		0A6E00271DCB3532004960DB /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		0A70D7881DCAD00F0097BD5E /* PSOverlayWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSOverlayWindowController.h; sourceTree = "<group>"; };
 		0A70D7891DCAD00F0097BD5E /* PSOverlayWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSOverlayWindowController.m; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		0A0947C31DC8441E009D9675 /* PinShot */ = {
 			isa = PBXGroup;
 			children = (
+				0A179A3A1DEFB22A006DC41A /* PinShot.entitlements */,
 				0A0947C41DC8441E009D9675 /* AppDelegate.h */,
 				0A0947C51DC8441E009D9675 /* AppDelegate.m */,
 				0A0947D81DC845C8009D9675 /* PSScreenCapturer.h */,
@@ -170,6 +172,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7X9UFZRCPT;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -325,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PinShot/PinShot.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7X9UFZRCPT;
@@ -334,6 +342,7 @@
 				);
 				INFOPLIST_FILE = PinShot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangjinli.PinShot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -343,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PinShot/PinShot.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7X9UFZRCPT;
@@ -352,6 +362,7 @@
 				);
 				INFOPLIST_FILE = PinShot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangjinli.PinShot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
