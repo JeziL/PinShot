@@ -52,8 +52,9 @@
 
 - (void)activeSpaceDidChange: (NSNotification *)notification {
     if (self.window.visible) {
-        [NSApp activateIgnoringOtherApps:YES];
-        [self.window becomeKeyWindow];
+//        [NSApp activateIgnoringOtherApps:YES];
+//        [self.window becomeKeyWindow];
+        [self.window close];
     }
 }
 
