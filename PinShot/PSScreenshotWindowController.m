@@ -7,6 +7,7 @@
 //
 
 #import "PSScreenshotWindowController.h"
+#import "PSScreenshotViewController.h"
 
 @interface PSScreenshotWindow : NSWindow
 
@@ -38,6 +39,12 @@
     [self.window setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
     [self.window setStyleMask:[self.window styleMask] | NSResizableWindowMask];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivedImage:) name:@"ShowScreenshot" object:nil];
+}
+
+- (void)windowDidResize:(NSNotification *)notification {
+    PSScreenshotViewController *contentVc = (PSScreenshotViewController *)self.contentViewController;
+    contentVc.view.frame = NSMakeRect(0, 0, self.window.frame.size.width, self.window.frame.size.height);
+    contentVc.screenshotView.frame = NSMakeRect(0, 0, self.window.frame.size.width, self.window.frame.size.height);
 }
 
 - (void)receivedImage: (NSNotification *)notification {

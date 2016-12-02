@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
@@ -765,7 +765,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="310" height="59"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9i-p2-FFH">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="n9i-p2-FFH">
                                 <rect key="frame" x="18" y="22" width="103" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Global Shortcut:" id="Gmu-DU-N0o">
@@ -774,7 +774,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IUc-ru-FpK" customClass="MASShortcutView">
+                            <customView id="IUc-ru-FpK" customClass="MASShortcutView">
                                 <rect key="frame" x="127" y="20" width="163" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </customView>
@@ -796,20 +796,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jpq-2p-pFD" customClass="PSScreenshotImageView">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Jpq-2p-pFD" customClass="PSScreenshotImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="Tr1-rV-DtK"/>
                                 <connections>
                                     <outlet property="menu" destination="GfU-af-Hlm" id="0bf-gz-OPa"/>
                                 </connections>
                             </imageView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="Jpq-2p-pFD" firstAttribute="top" secondItem="465-Py-a8k" secondAttribute="top" id="0jU-pa-xhI"/>
-                            <constraint firstItem="Jpq-2p-pFD" firstAttribute="leading" secondItem="465-Py-a8k" secondAttribute="leading" id="Pzc-3X-i8M"/>
-                            <constraint firstAttribute="bottom" secondItem="Jpq-2p-pFD" secondAttribute="bottom" id="ZkK-O7-HCg"/>
-                            <constraint firstAttribute="trailing" secondItem="Jpq-2p-pFD" secondAttribute="trailing" id="mgB-aI-YHv"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="screenshotView" destination="Jpq-2p-pFD" id="wsg-gp-Djd"/>

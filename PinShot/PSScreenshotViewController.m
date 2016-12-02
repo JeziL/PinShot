@@ -51,7 +51,8 @@
 - (void)receivedImage: (NSNotification *)notification {
     NSImage *image = notification.object;
     self.screenshotView.image = image;
-    //self.screenshotView.frame = NSMakeRect(0, 0, image.size.width, image.size.height);
+    self.view.frame = NSMakeRect(0, 0, image.size.width, image.size.height);
+    self.screenshotView.frame = NSMakeRect(0, 0, image.size.width, image.size.height);
 }
 
 - (IBAction)save:(NSMenuItem *)sender {
