@@ -53,7 +53,7 @@
     NSRect rect = NSMakeRect([[rectInfo objectForKey:@"x"] floatValue], [[rectInfo objectForKey:@"y"] floatValue], [[rectInfo objectForKey:@"w"] floatValue], [[rectInfo objectForKey:@"h"] floatValue]);
     [self.window setFrame:rect display:YES];
     self.window.contentViewController.view.frame = [self makeRectAtOrigin:NSMakePoint(0, 0) withSize:image.size];
-    [self.window setContentMinSize:NSMakeSize(0, 0)];
+    [self.window setContentMinSize:NSMakeSize(0.25 * image.size.width, 0.25 * image.size.height)];
     [self.window setContentAspectRatio:rect.size];
 }
 
