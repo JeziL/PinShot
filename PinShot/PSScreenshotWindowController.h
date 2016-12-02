@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface PSScreenshotWindowController : NSWindowController
+@interface PSScreenshotWindowController : NSWindowController<NSWindowDelegate>
 
 @end

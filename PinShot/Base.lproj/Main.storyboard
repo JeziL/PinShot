@@ -694,8 +694,8 @@
         <scene sceneID="N5s-4U-1PM">
             <objects>
                 <windowController storyboardIdentifier="ScreenShotWindow" id="BWT-zb-aAD" userLabel="ScreenShotWindow" customClass="PSScreenshotWindowController" sceneMemberID="viewController">
-                    <window key="window" title="PinShot" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="uHg-iK-NIc">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                    <window key="window" title="PinShot" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="uHg-iK-NIc" customClass="PSScreenshotWindow">
+                        <windowStyleMask key="styleMask" closable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
@@ -794,11 +794,11 @@
                 <viewController id="xCd-f7-Iya" customClass="PSScreenshotViewController" sceneMemberID="viewController">
                     <view key="view" id="465-Py-a8k">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jpq-2p-pFD" customClass="PSScreenshotImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Tr1-rV-DtK"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="Tr1-rV-DtK"/>
                                 <connections>
                                     <outlet property="menu" destination="GfU-af-Hlm" id="0bf-gz-OPa"/>
                                 </connections>

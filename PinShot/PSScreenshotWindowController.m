@@ -8,6 +8,18 @@
 
 #import "PSScreenshotWindowController.h"
 
+@interface PSScreenshotWindow : NSWindow
+
+@end
+
+@implementation PSScreenshotWindow
+
+- (BOOL)canBecomeKeyWindow {
+    return YES;
+}
+
+@end
+
 @interface PSScreenshotWindowController ()
 
 @end
@@ -16,6 +28,7 @@
 
 - (void)windowDidLoad {
     [super windowDidLoad];
+    self.window.delegate = self;
     self.window.titlebarAppearsTransparent = YES;
     self.window.titleVisibility = NSWindowTitleHidden;
     [[self.window standardWindowButton:NSWindowMiniaturizeButton] setHidden:YES];
@@ -23,6 +36,7 @@
     self.window.movableByWindowBackground = YES;
     [self.window setLevel:kCGMaximumWindowLevel];
     [self.window setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
+    [self.window setStyleMask:[self.window styleMask] | NSResizableWindowMask];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivedImage:) name:@"ShowScreenshot" object:nil];
 }
 
@@ -32,6 +46,8 @@
     NSRect rect = NSMakeRect([[rectInfo objectForKey:@"x"] floatValue], [[rectInfo objectForKey:@"y"] floatValue], [[rectInfo objectForKey:@"w"] floatValue], [[rectInfo objectForKey:@"h"] floatValue]);
     [self.window setFrame:rect display:YES];
     self.window.contentViewController.view.frame = [self makeRectAtOrigin:NSMakePoint(0, 0) withSize:image.size];
+    [self.window setContentMinSize:NSMakeSize(0, 0)];
+    [self.window setContentAspectRatio:rect.size];
 }
 
 - (CGRect)makeRectAtOrigin: (NSPoint)origin withSize: (NSSize)size {
