@@ -29,6 +29,12 @@
     }
 }
 
+- (void)mouseUp:(NSEvent *)event {
+    if ([event clickCount] == 2) {
+        [self.window close];
+    }
+}
+
 @end
 
 @interface PSScreenshotViewController ()
