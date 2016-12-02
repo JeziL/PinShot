@@ -805,10 +805,10 @@
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Jpq-2p-pFD" secondAttribute="trailing" id="QEh-Qh-gbz"/>
-                            <constraint firstItem="Jpq-2p-pFD" firstAttribute="leading" secondItem="465-Py-a8k" secondAttribute="leading" id="lTD-54-Ndw"/>
-                            <constraint firstAttribute="bottom" secondItem="Jpq-2p-pFD" secondAttribute="bottom" id="mLL-55-eGD"/>
-                            <constraint firstItem="Jpq-2p-pFD" firstAttribute="top" secondItem="465-Py-a8k" secondAttribute="top" id="woM-lC-IpZ"/>
+                            <constraint firstItem="Jpq-2p-pFD" firstAttribute="top" secondItem="465-Py-a8k" secondAttribute="top" id="0jU-pa-xhI"/>
+                            <constraint firstItem="Jpq-2p-pFD" firstAttribute="leading" secondItem="465-Py-a8k" secondAttribute="leading" id="Pzc-3X-i8M"/>
+                            <constraint firstAttribute="bottom" secondItem="Jpq-2p-pFD" secondAttribute="bottom" id="ZkK-O7-HCg"/>
+                            <constraint firstAttribute="trailing" secondItem="Jpq-2p-pFD" secondAttribute="trailing" id="mgB-aI-YHv"/>
                         </constraints>
                     </view>
                     <connections>
