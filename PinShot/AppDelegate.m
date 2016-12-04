@@ -47,7 +47,9 @@
 
 - (void)initStatusMenu {
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    self.statusItem.image = [NSImage imageNamed:@"StatusItemImage"];
+    NSImage *menubarIcon = [NSImage imageNamed:@"StatusItemImage"];
+    [menubarIcon setTemplate:YES];
+    self.statusItem.image = menubarIcon;
     self.statusItem.alternateImage = [NSImage imageNamed:@"StatusItemImageHighlighted"];
     self.statusItem.menu = self.statusMenu;
 }
