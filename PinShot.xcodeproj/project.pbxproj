@@ -18,23 +18,9 @@
 		0A6E00281DCB3532004960DB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E00271DCB3532004960DB /* Credits.rtf */; };
 		0A70D78A1DCAD00F0097BD5E /* PSOverlayWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A70D7891DCAD00F0097BD5E /* PSOverlayWindowController.m */; };
 		0A70D78D1DCAD02D0097BD5E /* PSOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A70D78C1DCAD02D0097BD5E /* PSOverlayView.m */; };
-		0AB8628E1DC8D4BB00E2DAB1 /* MASShortcut.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0AB8628F1DC8D53700E2DAB1 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */; };
 		0AB862921DC8D5F800E2DAB1 /* PSPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB862911DC8D5F800E2DAB1 /* PSPreferenceViewController.m */; };
+		78E2644AD8AAE415F5F7A9F3 /* libPods-PinShot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ECEAC7163EBE4553092B94 /* libPods-PinShot.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		0AB8628C1DC8D45E00E2DAB1 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0AB8628E1DC8D4BB00E2DAB1 /* MASShortcut.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A0947C11DC8441E009D9675 /* PinShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,10 +43,12 @@
 		0A70D7891DCAD00F0097BD5E /* PSOverlayWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSOverlayWindowController.m; sourceTree = "<group>"; };
 		0A70D78B1DCAD02D0097BD5E /* PSOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSOverlayView.h; sourceTree = "<group>"; };
 		0A70D78C1DCAD02D0097BD5E /* PSOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSOverlayView.m; sourceTree = "<group>"; };
-		0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MASShortcut.framework; sourceTree = "<group>"; };
 		0AB862901DC8D5F800E2DAB1 /* PSPreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPreferenceViewController.h; sourceTree = "<group>"; };
 		0AB862911DC8D5F800E2DAB1 /* PSPreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPreferenceViewController.m; sourceTree = "<group>"; };
 		0AB862931DC8DE4600E2DAB1 /* PSUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSUserDefaults.h; sourceTree = "<group>"; };
+		109609B1532B51040E3D2B88 /* Pods-PinShot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinShot.release.xcconfig"; path = "Pods/Target Support Files/Pods-PinShot/Pods-PinShot.release.xcconfig"; sourceTree = "<group>"; };
+		43ECEAC7163EBE4553092B94 /* libPods-PinShot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PinShot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABCA6EA017E6F40C2FF11D88 /* Pods-PinShot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinShot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinShot/Pods-PinShot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB8628F1DC8D53700E2DAB1 /* MASShortcut.framework in Frameworks */,
 				0A0947DD1DC84972009D9675 /* AppKit.framework in Frameworks */,
+				78E2644AD8AAE415F5F7A9F3 /* libPods-PinShot.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +67,10 @@
 		0A0947B81DC8441E009D9675 = {
 			isa = PBXGroup;
 			children = (
-				0AB8628D1DC8D4BB00E2DAB1 /* MASShortcut.framework */,
 				0A0947C31DC8441E009D9675 /* PinShot */,
 				0A0947C21DC8441E009D9675 /* Products */,
 				0A0947DB1DC84972009D9675 /* Frameworks */,
+				D1A53EC6F3F5BC56D8D8DC7A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,8 +122,18 @@
 			isa = PBXGroup;
 			children = (
 				0A0947DC1DC84972009D9675 /* AppKit.framework */,
+				43ECEAC7163EBE4553092B94 /* libPods-PinShot.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1A53EC6F3F5BC56D8D8DC7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA6EA017E6F40C2FF11D88 /* Pods-PinShot.debug.xcconfig */,
+				109609B1532B51040E3D2B88 /* Pods-PinShot.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A0947D51DC8441E009D9675 /* Build configuration list for PBXNativeTarget "PinShot" */;
 			buildPhases = (
+				4E65FFA31D7E99EBDD3849C3 /* [CP] Check Pods Manifest.lock */,
 				0A0947BD1DC8441E009D9675 /* Sources */,
 				0A0947BE1DC8441E009D9675 /* Frameworks */,
 				0A0947BF1DC8441E009D9675 /* Resources */,
-				0AB8628C1DC8D45E00E2DAB1 /* CopyFiles */,
+				F1BED58C2821D1314BBBD650 /* [CP] Embed Pods Frameworks */,
+				187F55CD5299C3944271D379 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,6 +210,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		187F55CD5299C3944271D379 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinShot/Pods-PinShot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E65FFA31D7E99EBDD3849C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1BED58C2821D1314BBBD650 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinShot/Pods-PinShot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A0947BD1DC8441E009D9675 /* Sources */ = {
@@ -330,6 +378,7 @@
 		};
 		0A0947D61DC8441E009D9675 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABCA6EA017E6F40C2FF11D88 /* Pods-PinShot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PinShot/PinShot.entitlements;
@@ -350,6 +399,7 @@
 		};
 		0A0947D71DC8441E009D9675 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 109609B1532B51040E3D2B88 /* Pods-PinShot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PinShot/PinShot.entitlements;
