@@ -14,3 +14,16 @@ The global shortcut is `Shift + Option + Command + 4`, which can be customized i
 
 Although it's not designed to do that but you can still right click to save the screenshot.
 
+## Build
+
+The pods directory is not included in the repo so you need to run `pod install` manually:
+
+```
+git clone https://github.com/JeziL/PinShot.git
+cd PinShot
+pod install
+open PinShot.xcworkspace
+```
+
+If you don't have [CocoaPods](https://cocoapods.org/) installed, [install it](https://guides.cocoapods.org/using/getting-started.html#installation).
+
