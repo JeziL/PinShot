@@ -11,6 +11,6 @@
 
 @interface PSPreferenceViewController : NSViewController
 
-@property (assign) IBOutlet MASShortcutView *shortcutView;
+@property (retain) IBOutlet MASShortcutView *shortcutView;
 
 @end

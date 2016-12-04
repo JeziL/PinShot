@@ -19,9 +19,5 @@
     [super viewDidLoad];
     self.shortcutView.associatedUserDefaultsKey = kPSNewCaptureShortcutKey;
 }
-    
-- (void)viewWillDisappear {
-    [self.shortcutView retain];
-}
 
 @end
