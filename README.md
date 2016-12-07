@@ -1,6 +1,6 @@
 # PinShot
 
-*Capture the screen and pin it for temporary usage.*
+*Capture the screen and make it floating for temporary reference.*
 
 ![Platform](https://img.shields.io/badge/platform-macOS-orange.svg)&nbsp;&nbsp;&nbsp;![SDK](https://img.shields.io/badge/SDK-10.12-lightgrey.svg)&nbsp;&nbsp;&nbsp;[![GitHub license](https://img.shields.io/badge/license-GPLv2-blue.svg)](https://raw.githubusercontent.com/JeziL/IPASearch/master/LICENSE)
 
@@ -12,13 +12,20 @@ Inspired by the jailbreak tweak [Snapper 2](http://moreinfo.thebigboss.org/morei
 
 ![gif](Assets/pinshot.gif)
 
-The global shortcut is `Shift + Option + Command + 4`, which can be customized in the preference window.
+See the introduction video [here](https://www.youtube.com/embed/ZoK7RrghvK0).
 
-Although it's not designed to do that but you can still right click to save the screenshot.
+## Features
 
-## Build
+- Start with global shortcut or menubar icon
+- Always floating on the very top
+- Drag to resize
+- Scroll to adjust opacity
+- Right click to save
+- Double click to dismiss
 
-The pods directory is not included in the repo so you need to run `pod install` manually:
+## How to Build
+
+The pods directory is **not** included in the repo so you need to run `pod install` manually:
 
 ```
 git clone https://github.com/JeziL/PinShot.git
@@ -28,4 +35,10 @@ open PinShot.xcworkspace
 ```
 
 If you don't have [CocoaPods](https://cocoapods.org/) installed, [install it](https://guides.cocoapods.org/using/getting-started.html#installation).
+
+## With Special Thanks to
+
+- [Snapper 2](http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=snapper2Dp)
+- [MASShortcut](https://github.com/shpakovski/MASShortcut)
+- [WTScreenCapturer](https://github.com/Naituw/WTScreenCapturer)
 
