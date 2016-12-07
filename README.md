@@ -12,7 +12,7 @@ Inspired by the jailbreak tweak [Snapper 2](http://moreinfo.thebigboss.org/morei
 
 ![gif](Assets/pinshot.gif)
 
-See the introduction video [here](https://www.youtube.com/embed/ZoK7RrghvK0).
+See the introduction video [here](https://www.youtube.com/watch?v=ZoK7RrghvK0).
 
 ## Features
 
