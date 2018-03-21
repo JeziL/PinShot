@@ -170,7 +170,7 @@
 				TargetAttributes = {
 					0A0947C01DC8441E009D9675 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 7X9UFZRCPT;
+						DevelopmentTeam = 5KK7XTP6QX;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -386,7 +386,7 @@
 				CODE_SIGN_ENTITLEMENTS = PinShot/PinShot.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7X9UFZRCPT;
+				DEVELOPMENT_TEAM = 5KK7XTP6QX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -407,7 +407,7 @@
 				CODE_SIGN_ENTITLEMENTS = PinShot/PinShot.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7X9UFZRCPT;
+				DEVELOPMENT_TEAM = 5KK7XTP6QX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
